@@ -1,0 +1,21 @@
+<link rel="import" href="http://rawgit.com/KageKirin/polymer-cdn/master/core/client/bower_components/polymer/polymer.html">
+<dom-module id="mdl-navigation-link">
+	<style>
+	</style>
+
+	<template>
+		<a class="mdl-navigation__link {{class}}" href="{{href}}">
+			<content></content>
+		</a>
+	</template>
+
+	<script>
+		Polymer({
+			is: 'mdl-navigation-link',
+			properties: {
+				class: String,
+				href: String
+			}
+		});
+	</script>
+</dom-module>
