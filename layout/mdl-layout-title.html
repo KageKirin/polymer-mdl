@@ -1,0 +1,20 @@
+<link rel="import" href="http://rawgit.com/KageKirin/polymer-cdn/master/core/client/bower_components/polymer/polymer.html">
+<dom-module id="mdl-layout-title">
+	<style>
+	</style>
+
+	<template>
+		<span class="mdl-layout-title {{class}}">
+			<content></content>
+		</span>
+	</template>
+
+	<script>
+		Polymer({
+			is: 'mdl-layout-title',
+			properties: {
+				class: String
+			}
+		});
+	</script>
+</dom-module>
