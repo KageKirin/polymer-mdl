@@ -1,0 +1,30 @@
+<!-- Polymer -->
+<link rel="import" href="http://rawgit.com/KageKirin/polymer-cdn/master/core/client/bower_components/polymer/polymer.html" />
+<!-- MDL -->
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:regular,bold,italic,thin,light,bolditalic,black,medium&amp;lang=en"  />
+<link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons"  />
+<link rel="stylesheet" href="https://cdn.materialdesignicons.com/1.1.70/css/materialdesignicons.min.css" />
+<link rel="stylesheet" href="https://storage.googleapis.com/code.getmdl.io/1.0.0/material.min.css" />
+
+<!-- Element -->
+<dom-module id="mdlseed-element">
+	<style>
+	</style>
+
+	<template>
+		<div class="mdlseed-element {{class}}">
+			<content></content>
+		</div>
+	</template>
+
+</dom-module>
+<script>
+	Polymer({
+		is: 'mdlseed-element',
+		properties: {
+			class: String
+		}
+	});
+</script>
+<!-- /Element -->
+<script src="https://storage.googleapis.com/code.getmdl.io/1.0.0/material.min.js"></script>
