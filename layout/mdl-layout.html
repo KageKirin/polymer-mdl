@@ -1,4 +1,12 @@
-<link rel="import" href="http://rawgit.com/KageKirin/polymer-cdn/master/core/client/bower_components/polymer/polymer.html">
+<!-- Polymer -->
+<link rel="import" href="http://rawgit.com/KageKirin/polymer-cdn/master/core/client/bower_components/polymer/polymer.html" />
+<!-- MDL -->
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:regular,bold,italic,thin,light,bolditalic,black,medium&amp;lang=en"  />
+<link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons"  />
+<link rel="stylesheet" href="https://cdn.materialdesignicons.com/1.1.70/css/materialdesignicons.min.css" />
+<link rel="stylesheet" href="https://storage.googleapis.com/code.getmdl.io/1.0.0/material.min.css" />
+
+<!-- Element -->
 <dom-module id="mdl-layout">
 	<style>
 	</style>
@@ -8,13 +16,14 @@
 			<content></content>
 		</div>
 	</template>
-
-	<script>
-		Polymer({
-			is: 'mdl-layout',
-			properties: {
-				class: String
-			}
-		});
-	</script>
 </dom-module>
+<script>
+	Polymer({
+		is: 'mdl-layout',
+		properties: {
+			class: { type: String }
+		}
+	});
+</script>
+<!-- /Element -->
+<script src="https://storage.googleapis.com/code.getmdl.io/1.0.0/material.min.js"></script>
