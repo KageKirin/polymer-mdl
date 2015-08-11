@@ -1,0 +1,29 @@
+{
+	"name": "polymer-mdl",
+	"version": "0.0.1",
+	"authors": [
+		"Anonymous <anonymous@example.com>"
+	],
+	"description": "Material Design Lite as Polymer elements",
+	"keywords": [
+		"web-component",
+		"web-components",
+		"polymer",
+		"mdl"
+	],
+	"main": "mdl-elements.html",
+	"license": "http://polymer.github.io/LICENSE.txt",
+	"homepage": "https://github.com/<USERNAME>/polymer-mdl/",
+	"ignore": [
+		"/.*",
+		"/test/",
+		"/demo/"
+	],
+	"dependencies": {
+		"polymer": "Polymer/polymer#^1.0.0"
+	},
+	"devDependencies": {
+		"iron-component-page": "PolymerElements/iron-component-page#^1.0.0",
+		"web-component-tester": "*"
+	}
+}
