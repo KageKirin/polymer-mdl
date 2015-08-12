@@ -12,18 +12,13 @@
 	</style>
 
 	<template>
-		<div class$="{{class}}">
 			<content></content>
-		</div>
 	</template>
 
 	<script>
 		Polymer({
 			is: 'mdl-layout-drawer',
-
-			properties: {
-				class: { type: String, value: "" }
-			},
+			extends: 'div',
 
 			ready: function() {
 				this.class = "mdl-layout__drawer " + this.class;

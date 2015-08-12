@@ -12,18 +12,13 @@
 	</style>
 
 	<template>
-		<header class$="{{class}}">
 			<content></content>
-		</header>
 	</template>
 
 	<script>
 		Polymer({
 			is: 'mdl-layout-header',
-
-			properties: {
-				class: { type: String, value: "" }
-			},
+			extends: 'header',
 
 			ready: function() {
 				this.class = "mdl-layout-header " + this.class;

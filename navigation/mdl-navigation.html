@@ -12,18 +12,13 @@
 	</style>
 
 	<template>
-		<nav class$="{{class}}">
 			<content></content>
-		</nav>
 	</template>
 
 	<script>
 		Polymer({
 			is: 'mdl-navigation',
-
-			properties: {
-				class: { type: String, value: "" }
-			},
+			extends: 'nav',
 
 			ready: function() {
 				this.class = "mdl-navigation " + this.class;

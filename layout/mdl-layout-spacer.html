@@ -12,15 +12,11 @@
 	</style>
 
 	<template>
-		<div class$="{{class}}"></div>
 	</template>
 	<script>
 		Polymer({
 			is: 'mdl-layout-spacer',
-
-			properties: {
-				class: { type: String, value: "" }
-			},
+			extends: 'div',
 
 			ready: function() {
 				this.class = "mdl-layout-spacer " + this.class;
