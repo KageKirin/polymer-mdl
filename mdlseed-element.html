@@ -12,15 +12,20 @@
 	</style>
 
 	<template>
-		<div class="mdlseed-element {{class}}">
+		<div class$="{{class}}">
 			<content></content>
 		</div>
 	</template>
 	<script>
 		Polymer({
 			is: 'mdlseed-element',
+
 			properties: {
-				class: String
+				class: { type: String, value: "" },
+			},
+
+			ready: function() {
+				this.class = "mdlseed-element " + this.class;
 			}
 		});
 	</script>

@@ -13,16 +13,21 @@
 	</style>
 
 	<template>
-		<mdl-layout class$="mdl-js-layout {{class}}">
+		<mdl-layout class$="{{class}}">
 			<content></content>
 		</mdl-layout>
 	</template>
-	
+
 	<script>
 		Polymer({
 			is: 'mdl-js-layout',
+
 			properties: {
 				class: { type: String, value: "" }
+			},
+
+			ready: function() {
+				this.class = "mdl-js-layout " + this.class;
 			}
 		});
 	</script>

@@ -12,7 +12,7 @@
 	</style>
 
 	<template>
-		<div class="mdl-layout {{class}}">
+		<div class$="{{class}}">
 			<content></content>
 		</div>
 	</template>
@@ -20,8 +20,13 @@
 	<script>
 		Polymer({
 			is: 'mdl-layout',
+
 			properties: {
 				class: { type: String, value: "" }
+			},
+
+			ready: function() {
+				this.class = "mdl-layout " + this.class;
 			}
 		});
 	</script>

@@ -12,7 +12,7 @@
 	</style>
 
 	<template>
-		<span class="mdl-layout-title {{class}}">
+		<span class$="{{class}}">
 			<content></content>
 		</span>
 	</template>
@@ -20,8 +20,13 @@
 	<script>
 		Polymer({
 			is: 'mdl-layout-title',
+
 			properties: {
 				class: { type: String, value: "" }
+			},
+
+			ready: function() {
+				this.class = "mdl-layout-title " + this.class;
 			}
 		});
 	</script>

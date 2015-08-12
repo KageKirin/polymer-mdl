@@ -12,7 +12,7 @@
 	</style>
 
 	<template>
-		<a class="mdl-navigation__link {{class}}" href="[[href]]">
+		<a class$="{{class}}" href$="{{href}}">
 			<content></content>
 		</a>
 	</template>
@@ -20,9 +20,14 @@
 	<script>
 		Polymer({
 			is: 'mdl-navigation-link',
+
 			properties: {
 				class: { type: String, value: "" },
 				href: { type: String, value: "" }
+			},
+
+			ready: function() {
+				this.class = "mdl-navigation__link " + this.class;
 			}
 		});
 	</script>
