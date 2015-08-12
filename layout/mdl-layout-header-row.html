@@ -12,7 +12,7 @@
 	</style>
 
 	<template>
-		<div class="mdl-layout__header-row {{class}}">
+		<div class="mdl-layout__header-row {{ {class} | tokenList}}">
 			<content></content>
 		</div>
 	</template>

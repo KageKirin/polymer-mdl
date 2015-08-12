@@ -12,7 +12,7 @@
 	</style>
 
 	<template>
-		<nav class="mdl-navigation {{class}}">
+		<nav class="mdl-navigation {{ {class} | tokenList}}">
 			<content></content>
 		</nav>
 	</template>

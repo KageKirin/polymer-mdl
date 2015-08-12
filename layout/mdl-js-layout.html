@@ -13,7 +13,7 @@
 	</style>
 
 	<template>
-		<mdl-layout class="mdl-js-layout {{class}}">
+		<mdl-layout class="mdl-js-layout {{ {class} | tokenList}}">
 			<content></content>
 		</mdl-layout>
 	</template>

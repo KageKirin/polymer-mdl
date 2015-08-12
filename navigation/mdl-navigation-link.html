@@ -12,7 +12,7 @@
 	</style>
 
 	<template>
-		<a class="mdl-navigation__link {{class}}" href="[[href]]">
+		<a class="mdl-navigation__link {{ {class} | tokenList}}" href="[[href]]">
 			<content></content>
 		</a>
 	</template>

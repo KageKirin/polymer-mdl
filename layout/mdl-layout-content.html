@@ -12,7 +12,7 @@
 	</style>
 
 	<template>
-		<main class="mdl-layout__content {{class}}">
+		<main class="mdl-layout__content {{ {class} | tokenList}}">
 			<content></content>
 		</main>
 	</template>
