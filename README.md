@@ -5,7 +5,8 @@
 ## Status
 
 - Proof of concept WIP
-	- seems to be working!
+	- CSS class are passed and set correctly to the elements
+	- JS-injected elements don't work
 
 - some layout and navigation elements ported
 
