@@ -13,9 +13,9 @@
 	</style>
 
 	<template>
-		<mdl-layout class$="{{class}}">
+		<div class$="{{class}}">
 			<content></content>
-		</mdl-layout>
+		</div>
 	</template>
 
 	<script>
@@ -26,8 +26,8 @@
 				class: { type: String, value: "" }
 			},
 
-			ready: function() {
-				this.class = "mdl-js-layout " + this.class;
+			created: function() {
+				this.class = "mdl-layout mdl-js-layout " + this.class;
 			}
 		});
 	</script>
