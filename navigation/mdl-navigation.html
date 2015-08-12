@@ -16,14 +16,15 @@
 			<content></content>
 		</nav>
 	</template>
+	
+	<script>
+		Polymer({
+			is: 'mdl-navigation',
+			properties: {
+				class: { type: String, value: "" }
+			}
+		});
+	</script>
 </dom-module>
-<script>
-	Polymer({
-		is: 'mdl-navigation',
-		properties: {
-			class: { type: String, value: "" }
-		}
-	});
-</script>
 <!-- /Element -->
 <script src="https://storage.googleapis.com/code.getmdl.io/1.0.0/material.min.js"></script>
